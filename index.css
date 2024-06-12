@@ -589,11 +589,11 @@ color: var(--text-color2);
 
 .down-whole{
   margin: 0 auto;
-  max-width:100% ;
+  width: 88% ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4.5rem;
-  padding: 5rem 2.3rem;
+  gap: 2rem;
+  padding: 2rem 2rem;
 }
 .asth1{
   position: absolute;
@@ -606,9 +606,11 @@ color: var(--text-color2);
 .bos-inner-one{
   display: flex;
   flex-direction: column;
+  gap: 0.1rem;
   transition: all 0.3s ease-in-out;
   padding: 0.5rem 1.5rem;
   border-bottom: 1px solid var(--text-color2);
+  width: 100%;
 }
 .idk{
   display: flex;
@@ -617,30 +619,31 @@ color: var(--text-color2);
   gap: 5.5rem;
   color: var(--Primary-color);
   padding: 0.7rem 0;
-  max-width: 100%;
+    width: 100%;
 }
 .bos-inner-one:hover{
   transform: scale(1.03) translate3d(0, 0, 0);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .reveal-content{
-  display: none;
-  padding: 3rem 1rem;
-  background-color: var(--secondary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: var(--primary-color2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: inline-flex;
 }
-.reveal-content .show{
-  display: block;
-  opacity: 1;
-}
-.reveal-content p{
-font-size: 0.9rem;
-color: var(--text-color2);
-width: 80%;
-}
-.idk i:last-child{
+
+.hidden{
   display: none;
+}
+
+.reveal-content p{
+font-size: 0.8rem;
+color: var(--text-color2);
+width: 100%;
+padding: 1rem 0;
+}
+.idk i{
+  display: block;
 }
 .idk h4,
 .idk i{
@@ -663,7 +666,7 @@ width: 80%;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 
 }
 
