@@ -39,13 +39,13 @@ img{
   max-width: 100%;
 }
 header{
-  padding: var(--mobile-padding);
+  padding: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   background-color: var(--Primary-color);
   color: var(--text-color3);
-  gap: 6rem;
+  gap: 8rem;
   box-shadow: 2px 2px 10px 0.2px rgba(141, 194, 200, 0.5);
   width: 100%;
   margin: 0 auto;
@@ -68,7 +68,7 @@ nav, .nav-icn{
 }
 .menu-toggle{
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 0.5rem;
 }
 .main-logo{
@@ -333,7 +333,10 @@ nav, .nav-icn{
   width: 10rem;
 }
 .asth img:last-child{
-/* display: none; */
+  width: 8rem;
+  transform: translateX(12rem);
+  position: relative;
+  top: 12rem;
 }
 .gradient-overlay{ 
   position: absolute;
@@ -567,6 +570,9 @@ color: var(--text-color2);
 .asth1 img:last-child{
 display: none;
 }
+.asth1 img:first-child{
+  width: 90%;
+  }
 
 .bos-inner-one{
   display: flex;
