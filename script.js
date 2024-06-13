@@ -51,6 +51,9 @@ $(document).ready(function() {
         const contentBlock = $(this).closest('.bos-inner-one').find('.reveal-content');
         const icon = $(this).closest('.bos-inner-one').find('.icon');
 
+        $('.reveal-content').not(contentBlock).addClass('hidden');
+        $('.icon').not(icon).removeClass('fi-rr-cross-circle').addClass('fi-rr-add');
+
         contentBlock.toggleClass('hidden');
 
         if (contentBlock.hasClass('hidden')) {
