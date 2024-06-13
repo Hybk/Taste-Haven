@@ -45,24 +45,6 @@ setInterval(() => {
 
 
 // reveal
-// function toggleBlock() {
-//     const contentBlock = document.querySelector('.reveal-content');
-//     const icon = document.querySelector('icon');
-    
-//     if (contentBlock.classList.contains('hidden')) {
-//         contentBlock.classList.remove('hidden');
-//         icon.classList.remove('fi-rr-add');
-//         icon.classList.add('fi-rr-cross-circle');
-//     } else {
-//         contentBlock.classList.add('hidden');
-//         icon.classList.remove('fi-rr-cross-circle');
-//         icon.classList.add('fi-rr-add');
-//     }
-// }
-
-// document.querySelectorAll('.toggleBtn, .icon').forEach(element => {
-//     element.addEventListener('click', toggleBlock);
-// });
 
 $(document).ready(function() {
     $('.toggleBtn, .icon').click(function() {
