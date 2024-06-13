@@ -30,7 +30,6 @@ body{
   margin: 0 auto;
   font-family: var(--font-family-main);
   overflow: hidden;
-  padding: var(--mobile-padding);
   width: 100%;
 }
 
@@ -314,7 +313,7 @@ nav, .nav-icn{
 .fourth{
   max-width: 100%;
   background-image: url('/Taste-Haven/assets/brooke-cagle-8jp-6SjVibM-unsplash.jpg');
-  height: 35rem;
+  height: 36rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,7 +357,7 @@ nav, .nav-icn{
   font-size: 0.8rem;
   color: var(--secondary-color2);
   max-width :90% ;
-  font-weight: 100;
+  font-weight: 300;
   /* display: none; */
 }
 .cont-texts{
