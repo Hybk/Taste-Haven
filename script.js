@@ -45,21 +45,36 @@ setInterval(() => {
 
 
 // reveal
-function toggleBlock() {
-    const contentBlock = document.querySelector('.reveal-content');
-    const icon = document.querySelector('icon');
+// function toggleBlock() {
+//     const contentBlock = document.querySelector('.reveal-content');
+//     const icon = document.querySelector('icon');
     
-    if (contentBlock.classList.contains('hidden')) {
-        contentBlock.classList.remove('hidden');
-        icon.classList.remove('fi-rr-add');
-        icon.classList.add('fi-rr-cross-circle');
-    } else {
-        contentBlock.classList.add('hidden');
-        icon.classList.remove('fi-rr-cross-circle');
-        icon.classList.add('fi-rr-add');
-    }
-}
+//     if (contentBlock.classList.contains('hidden')) {
+//         contentBlock.classList.remove('hidden');
+//         icon.classList.remove('fi-rr-add');
+//         icon.classList.add('fi-rr-cross-circle');
+//     } else {
+//         contentBlock.classList.add('hidden');
+//         icon.classList.remove('fi-rr-cross-circle');
+//         icon.classList.add('fi-rr-add');
+//     }
+// }
 
-document.querySelectorAll('.toggleBtn, .icon').forEach(element => {
-    element.addEventListener('click', toggleBlock);
+// document.querySelectorAll('.toggleBtn, .icon').forEach(element => {
+//     element.addEventListener('click', toggleBlock);
+// });
+
+$(document).ready(function() {
+    $('.toggleBtn, .icon').click(function() {
+        const contentBlock = $(this).closest('.bos-inner-one').find('.reveal-content');
+        const icon = $(this).closest('.bos-inner-one').find('.icon');
+
+        contentBlock.toggleClass('hidden');
+
+        if (contentBlock.hasClass('hidden')) {
+            icon.removeClass('fi-rr-cross-circle').addClass('fi-rr-add');
+        } else {
+            icon.removeClass('fi-rr-add').addClass('fi-rr-cross-circle');
+        }
+    });
 });
