@@ -333,8 +333,7 @@ nav, .nav-icn{
   width: 10rem;
 }
 .asth img:last-child{
-  transform: translateX(12rem);
-  width: 5rem;
+/* display: none; */
 }
 .gradient-overlay{ 
   position: absolute;
@@ -566,7 +565,7 @@ color: var(--text-color2);
   transform: translateX(-7rem);
 }
 .asth1 img:last-child{
-  transform: translate(85rem, 5rem);
+display: none;
 }
 
 .bos-inner-one{
