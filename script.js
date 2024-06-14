@@ -63,3 +63,20 @@ $(document).ready(function() {
         }
     });
 });
+
+
+
+
+$(document).ready(function() {
+    $('.menu-toggle').click(function(){
+        const navList = $(this).siblings('nav').find('.nav-list');
+        navList.toggleClass('active');
+        $('body').toggleClass('blur'); // Blur the body when the menu is active
+    });
+
+    $('.nav-list li a').click(function(){
+        $('.nav-list').removeClass('active');
+        $('body').removeClass('blur');
+    });
+    
+});

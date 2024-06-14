@@ -52,9 +52,55 @@ header{
 }
 
 /* nav section */
+/* body.blur {
+  filter: blur(5px);
+} */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+.nav-list{
+  display: none;
+  backdrop-filter: blur(var(--blur-radius));
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Primary-color);
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  left: 0;
+  width: 100%;
+  top: 14.5%;
+  z-index:1000 ;
+}
+
+.nav-list.active {
+  display: flex;
+}
+nav li a{
+  text-decoration: none;
+  color: var(--primary-color2);
+  display: block;
+  transition: background-color 0.3s, color 0.3s; 
+}
 
 
-nav, .nav-icn{
+.nav-list, .nav-icn{
   display: none;
 }
 .menu-toggle{
@@ -809,7 +855,7 @@ color: var(--text-color);
 }
   */
 
-/* xs */
+/* phone */
 @media (min-width: 475px) {
   /* .container {
       max-width: 475px;} */
@@ -1006,7 +1052,7 @@ color: var(--text-color);
     align-items: center;
     }
 }
-/* sm */
+/* small tab */
 @media (min-width: 640px) {
   /* .container {
       max-width: 640px;} */
@@ -1030,12 +1076,12 @@ header {
   align-items: center;
 }
 }
-/* md */
+/* tablet */
 @media (min-width: 768px) {
   /* .container {
       max-width: 768px;} */
 }
-/* lg */
+/* laptop */
 @media (min-width: 1024px) {
   /* .container {
       max-width: 1024px;} */
@@ -1755,7 +1801,7 @@ header {
     bottom: 4rem;
   }
 }
-/* xl */
+/* desktop */
 @media (min-width: 1280px) {
   /* .container {
       max-width: 1280px;} */
@@ -1766,6 +1812,12 @@ header {
   /* Header section */
   nav, .nav-icn{
     display: flex;
+  }
+  .nav-list{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
   }
 
   header {
@@ -2483,10 +2535,15 @@ header {
   }
 
 }
-/* 2xl */
+/* monitor */
 @media (min-width: 1536px) {
   /* .container {
       max-width: 1536px;} */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body{
     font-size: 1.25rem;
     padding: 0;
@@ -2501,6 +2558,7 @@ header {
     box-shadow: 2px 2px 10px 0.2px rgba(141, 194, 200, 0.5);
     display: flex;
     align-items: center;
+
   }
   nav ul {
     list-style: none;
