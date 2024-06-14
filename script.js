@@ -68,15 +68,32 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    $('.menu-toggle').click(function(){
-        const navList = $(this).siblings('nav').find('.nav-list');
+    $('.menu-toggle, .menu-toggle1').click(function() {
+        const navList = $('nav .nav-list');
+        const menuToggle = $('.menu-toggle');
+        const menuToggle1 = $('.menu-toggle1');
+
         navList.toggleClass('active');
         $('body').toggleClass('blur'); // Blur the body when the menu is active
+
+        if (navList.hasClass('active')) {
+            menuToggle.hide();
+            menuToggle1.show();
+        } else {
+            menuToggle.show();
+            menuToggle1.hide();
+        }
     });
 
-    $('.nav-list li a').click(function(){
-        $('.nav-list').removeClass('active');
+    $('.nav-list li a').click(function() {
+        const navList = $(this).closest('nav').find('.nav-list');
+        const menuToggle = $('.menu-toggle');
+        const menuToggle1 = $('.menu-toggle1');
+
+        navList.removeClass('active');
         $('body').removeClass('blur');
+
+        menuToggle.show();
+        menuToggle1.hide();
     });
-    
 });
