@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Taste Haven - Restaurant Landing Page">
     <meta name="description" content="Experience the future of food ordering and staff management at Taste Haven. Try our easy online ordering system and streamlined operations.">
     <meta name="keywords" content="Taste Haven, restaurant, food ordering, staff management, online ordering, dashboard">
@@ -15,6 +15,11 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     <title>Taste Haven</title>
     <link rel="stylesheet" href="/Taste-Haven/pages/Menu/index.css">
@@ -81,11 +86,528 @@
     <section class="sell-market">
         <div class="header-c">
             <ul class="my-list">
-                <li class="active">Appetizers</li>
-                <li>Desserts</li>
-                <li>Drinks</li>
-                <li>Specials</li>
+                <li class="active" data-target="#market1">Appetizers</li>
+                <li data-target="#market2">Desserts</li>
+                <li data-target="#market3">Drinks</li>
+                <li data-target="#market4">Specials</li>
             </ul>
+        </div>
+        <div class="global-market">
+            <div class="market active" id="market1">
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food2.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Mini Quiches</h6>
+                        <p>Bite-sized quiches filled with cheese, ham, and vegetables.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$25.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food3.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Stuffed Mushrooms</h6>
+                        <p>Mushroom caps filled with a mixture of sausage, breadcrumbs, cheese and herbs, baked until brown.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$11.59</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food4.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Baked Brie</h6>
+                        <p>A wheel of brie cheese baked with fruit preserves and served with crackers or bread</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$30.49</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food5.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Fried Calamari</h6>
+                        <p>Crispy fried squid rings served with a side of marinara sauce.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$14.02</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food6.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Chicken Sliders</h6>
+                        <p>Bite-sized burgers made with chicken or beef,topped with cheese, lettuce, and tomato.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$75.19</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food7.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Caprese Crostini</h6>
+                        <p>Toasted bread topped with fresh mozarella, tomato, and basil, dressesd with olive oil and balsamic glaze.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$90.98</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food8.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Stuffed Olives</h6>
+                        <p>Green or black olives filled with a mixture of cheese, herbs, and spices.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$55.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/food9.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Grilled Pineapple</h6>
+                        <p>Skewers of pineapple and bacon, grilled to caramelized perfection.</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$25.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                      <img src="/Taste-Haven/assets/Food2.jpg" alt="Grilled Chicken">
+                    </div>
+                    <div class="food-info">
+                      <h6>Grilled Chicken</h6>
+                      <p>Juicy grilled chicken breast served with a side of roasted vegetables and garlic mashed potatoes.</p>
+                      <div class="price">
+                        <button>Add To Cart</button>
+                        <h3>$18.99</h3>
+                      </div>
+                    </div>
+                </div>
+                <div class="food">
+                <div class="food-pic">
+                    <img src="/Taste-Haven/assets/Food3.jpg" alt="Vegetable Stir-fry">
+                </div>
+                <div class="food-info">
+                    <h6>Vegetable Stir-fry</h6>
+                    <p>A medley of fresh vegetables stir-fried in a savory soy sauce, served with steamed jasmine rice.</p>
+                    <div class="price">
+                    <button>Add To Cart</button>
+                    <h3>$13.99</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="food">
+                <div class="food-pic">
+                    <img src="/Taste-Haven/assets/Food4.jpg" alt="Beef Tacos">
+                </div>
+                <div class="food-info">
+                    <h6>Beef Tacos</h6>
+                    <p>Soft tortillas filled with seasoned beef, fresh lettuce, tomatoes, cheese, and a dollop of sour cream.</p>
+                    <div class="price">
+                    <button>Add To Cart</button>
+                    <h3>$12.99</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="market" id="market2">
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb2.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb3.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb4.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb5.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb6.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb7.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb8.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/foodb9.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="market" id="market3">
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="market" id="market4">
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="food-pic">
+                        <img src="/Taste-Haven/assets/Food1.jpg" alt="">
+                    </div>
+                    <div class="food-info">
+                        <h6>Tomato Pasta</h6>
+                        <p>Fresh pasta tossed in a rich and creamy tomato sauce, topped with parmesan cheese and basil</p>
+                        <div class="price">
+                            <button>Add To Cart</button>
+                            <h3>$15.99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

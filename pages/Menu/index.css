@@ -373,21 +373,30 @@ nav li a{
   /* second section */
 .sell-market{
   background-color: var(--primary-color2);
-  padding: 3rem 2rem;
+  padding: 3rem 0;
+  overflow-x: hidden;
 }
+.global-market{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 
-
-
+}
 
 
   .header-c{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .header-c .my-list{
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 1rem;
   }
   .my-list {
@@ -396,7 +405,7 @@ nav li a{
     margin: 0 auto;
   }
   .my-list li {
-    padding: 0.6rem 2rem; 
+    padding: 0.6rem 1rem; 
     position: relative;   
     cursor: pointer;
     color: var(--text-color2);
@@ -421,10 +430,86 @@ nav li a{
   .my-list li:first-child::after{
     content: none;
   }
+  #market1, #market2, #market3, #market5 {
+    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    align-items: center;
+    min-width: 100%;
+    height: auto;
+    padding: 2rem;
+    position: relative;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+  .market {
+    display: none;
+}
+
+.market.active {
+    display: block;
+}
+
+
+  .food{
+    width: 19rem;
+    height:26rem;
+  }
+  .food-pic{
+    height: 50%;
+    position: relative;
+  }
+  .food-pic img{
+    overflow: hidden;
+  }
+
+  .food-info{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .food-info h6{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-color2);
+    width: 80%;
+  }
+  .food-info p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--text-color2);
+  }
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .price button{
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--text-color2);
+    font-size: 1rem;
+    border: 2px solid var(--Primary-color);
+    border-radius: 0.3rem;
+  }
+  .price h3{
+    color: var(--text-color2);
+  }
 
 
 
-
+ 
 
 
 
