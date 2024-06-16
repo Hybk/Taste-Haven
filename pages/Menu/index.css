@@ -430,6 +430,9 @@ nav li a{
   .my-list li:first-child::after{
     content: none;
   }
+  .my-list li:hover{
+    color: var(--text-color);
+  }
   #market1, #market2, #market3, #market5 {
     flex: 1 1 100%;
     display: grid;
