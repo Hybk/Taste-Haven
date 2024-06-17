@@ -774,7 +774,7 @@ footer{
   .email-group input{
     width: 100%;
     border-radius: 0.3rem;
-    padding: 0.7rem 0;
+    padding: 0.7rem 1rem;
     border: 1px solid #E0E0E0;
   }
   .email-group label{
@@ -957,6 +957,7 @@ footer{
     }
   
     .copyright{
+      display: block;
       position: relative;
       font-size: 0.9rem;
       font-weight: 200;

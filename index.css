@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -52,13 +53,6 @@ header{
 }
 
 /* nav section */
-/* nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 1rem;
-  background-color: var(--primary-color);
-} */
 nav ul{
   list-style: none;
   display: flex;
@@ -66,12 +60,12 @@ nav ul{
   max-width: 100%;
   gap: 3rem;
   padding: 2rem 0;
+  margin: 0;
 }
 .nav-list{
   display: none;
   backdrop-filter: blur(var(--blur-radius));
   position: absolute;
-  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--Primary-color);
@@ -83,6 +77,8 @@ nav ul{
   top: 14.5%;
   z-index:1000 ;
   padding-bottom: 13rem;
+  transition: max-height 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  margin: 0;
 }
 
  .nav-list.active {
@@ -94,7 +90,7 @@ nav li a{
   display: block;
   transition: background-color 0.3s, color 0.3s; 
 } 
-.nav-list, .nav-icn{
+.nav-icn{
   display: none;
 }
 .menu-toggle{
@@ -586,6 +582,7 @@ color: var(--text-color2);
   background-color: transparent;
   border: 2px solid var(--text-color);
   color: var(--text-color2);
+  width: 100%;
 }
 .full-btn1 button:last-child:hover{
   background-color: var(--text-color);
@@ -686,13 +683,12 @@ footer{
   color: var(--text-color2);
 }
 .foot-cont{
-    padding: 4rem 2rem;
+  padding: 4rem 3.5rem;
   display: flex;
   flex-direction: column;
   margin: auto;
   font-size: 1rem;
   font-weight: 300;
-  align-items: center;
   justify-content: space-around;
   gap: 2rem;
 }
@@ -706,7 +702,6 @@ footer h3{
 .news{
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
 }
 .news h3:first-child{
@@ -716,12 +711,11 @@ footer h3{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: center;
 }
 
 .mail input{
-padding:0.7rem 0.6rem;
-width: 15rem;
+padding:0.7rem 1rem;
+width: 25rem;
 border-radius: 1.5rem;
 background-color: var(--secondary-color);
 border: 1PX solid var(--text-color2);
@@ -855,8 +849,6 @@ color: var(--text-color);
 
 /* phone */
 @media (min-width: 475px) {
-  /* .container {
-      max-width: 475px;} */
   /* first section */
 
   img{

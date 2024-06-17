@@ -74,7 +74,6 @@ $(document).ready(function() {
         const menuToggle1 = $('.menu-toggle1');
 
         navList.toggleClass('active');
-        $('body').toggleClass('blur'); // Blur the body when the menu is active
 
         if (navList.hasClass('active')) {
             menuToggle.hide();
@@ -91,7 +90,6 @@ $(document).ready(function() {
         const menuToggle1 = $('.menu-toggle1');
 
         navList.removeClass('active');
-        $('body').removeClass('blur');
 
         menuToggle.show();
         menuToggle1.hide();
