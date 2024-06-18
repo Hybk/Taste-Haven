@@ -14,7 +14,7 @@
   --font-family-main: "Montserrat", sans-serif;
   --mobile-padding: 0.6rem 1rem;
   --tablet-padding: 0.2rem 1.5rem;
-  --desktop-padding: 0.5rem 3.5rem;
+  --desktop-padding: 0.7  rem 3.5rem;
   --time-font: "Cursed Timer ULiL", sans-serif;
 }
 html,
@@ -63,7 +63,12 @@ nav ul {
   margin: 0;
 }
 nav {
-  display: none;
+  position: absolute;
+  transform: translateX(-1.5rem);
+  width: 100%;
+  background-color: var(--Primary-color);
+  z-index: 1;
+  top: 6rem;
 }
 .nav-list {
   display: none;
@@ -102,13 +107,8 @@ nav li a {
   padding: 0 0.5rem;
   transition: ease-in;
 }
-.menu-toggle1 {
+.menu-toggle1{
   display: none;
-  font-size: 1.2rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  left: 25rem;
-  transition: ease-in;
 }
 .main-logo {
   display: flex;
@@ -821,8 +821,8 @@ footer h3 {
   align-items: center;
 }
 .mail-icn {
-  width: 2rem;
-  height: 2rem;
+  max-width: 3rem;
+  max-height: 3rem;
   background-color: var(--text-color2);
   color: var(--secondary-color);
   display: flex;
@@ -832,6 +832,9 @@ footer h3 {
   position: relative;
   transform: translateX(-2.5rem);
   cursor: pointer;
+}
+.mail-icn i{
+  font-size: 1rem;
 }
 
 .mail-icn i:hover {
@@ -1172,6 +1175,11 @@ footer h3 {
   .nav-icn {
     display: flex;
   }
+  nav{
+    position: relative;
+    width: 25%;
+    top: 0;
+  }
   .nav-list {
     position: static;
     display: flex;
@@ -1180,7 +1188,7 @@ footer h3 {
   }
 
   header {
-    padding: var(--desktop-padding);
+    padding: 1.2rem 1rem;
     box-shadow: 2px 2px 10px 0.2px rgba(141, 194, 200, 0.5);
     display: flex;
     align-items: center;
@@ -1188,7 +1196,7 @@ footer h3 {
   nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 0.9rem;
   }
   li:hover a {
@@ -1296,7 +1304,7 @@ footer h3 {
     justify-content: flex-start;
     align-items: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     gap: 1rem;
     width: 100%;
   }
