@@ -34,14 +34,27 @@ function pad(number) {
 
 // carusel
 
-const images = document.querySelectorAll('.container-img img');
-let currentIndex = 0;
+// Example of adding auto-scroll functionality
+const carousel = document.querySelector('.carousel');
 
-setInterval(() => {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add('active');
-}, 3000);
+let scrollAmount = 0;
+const scrollStep = 200;
+const delay = 3000; // 3 seconds
+
+function autoScroll() {
+  if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+    scrollAmount = 0;
+  } else {
+    scrollAmount += scrollStep;
+  }
+  carousel.scrollTo({
+    top: 0,
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+setInterval(autoScroll, delay);
 
 
 // reveal
