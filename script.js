@@ -34,7 +34,35 @@ function pad(number) {
 
 // carusel
 
+const images = document.querySelectorAll('.container-img img');
+let currentIndex = 0;
 
+setInterval(() => {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}, 3000);
+
+
+// reveal
+
+$(document).ready(function() {
+    $('.toggleBtn, .icon').click(function() {
+        const contentBlock = $(this).closest('.bos-inner-one').find('.reveal-content');
+        const icon = $(this).closest('.bos-inner-one').find('.icon');
+
+        $('.reveal-content').not(contentBlock).addClass('hidden');
+        $('.icon').not(icon).removeClass('fi-rr-cross-circle').addClass('fi-rr-add');
+
+        contentBlock.toggleClass('hidden');
+
+        if (contentBlock.hasClass('hidden')) {
+            icon.removeClass('fi-rr-cross-circle').addClass('fi-rr-add');
+        } else {
+            icon.removeClass('fi-rr-add').addClass('fi-rr-cross-circle');
+        }
+    });
+});
 
 
 
