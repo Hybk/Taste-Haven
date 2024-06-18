@@ -1490,6 +1490,7 @@ footer h3 {
     margin: 0;
     font-size: 1.35rem;
     color: var(--primary-color2);
+    display: block;
   }
 
   .item:hover .ima-container {
@@ -1503,6 +1504,7 @@ footer h3 {
 
   .search {
     display: flex;
+    display: block;
     align-items: center;
   }
   .search i {
