@@ -307,39 +307,122 @@ nav li a {
 }
 
 /* third Section */
-.third-sec {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  /* padding: 1.5rem 0; */
-}
-.d {
-  font-size: 0.9rem;
-  font-weight: 800;
-}
+ .third-sec {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   padding: 1rem 0;
+ }
 
-.carusel {
-  display: flex;
-  gap: 0.8rem;
-}
+ .d {
+   h1 {
+     font-size: 1rem;
+     font-weight: bold;
+   }
+ }
 
-.ima-container {
+ .carousel {
+   display: flex;
+   gap: 0.7rem;
+ }
+
+ .item {
+   position: relative;
   width: 170px;
-  max-width: 435px;
-  margin: 0 auto;
-}
+   height: 45vh;
+   overflow: hidden;
+   transition: height 0.3s ease;
+ }
 
-.ima-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
+ .ima-container {
+    width: 100%;
+   height: 100%;
+   overflow: hidden;
+   border-radius: 0;
+ }
+
+ .ima-container img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s;
+   border-radius: 0;
+ }
+
+ .text-div {
+   background-color: rgba(240, 240, 240, 0.9);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   opacity: 0;
+   height: 0;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   transition: height 0.3s ease, opacity 0.3s ease;
+   padding: 0.8rem;
+   box-sizing: border-box;
+ }
+
+ .text-div h6 {
+   margin: 0 auto;
+   font-size: 1rem;
+   color: var(--primary-color2);
+   position: relative;
+ }
+
+ .text-div p {
+   margin: 10px 0;
+   font-size: 0.6rem;
+ }
+
+ .text-div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+ }
+
+ .text-div .price button {
+   padding: 0.5rem 0.5rem;
+   font-size: 0.9rem;
+   transition: ease-in-out 200ms;
+ }
+
+ .price button {
+   border-radius: 0.5rem;
+   width: 100%;
+ }
+
+ .price {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   width: 100%;
+ }
+
+ .price button:hover {
+   background-color: var(--primary-color2);
+   color: var(--text-color2);
+ }
+
+ .text-div .price h3 {
+  display: none;
+ }
+
+ .item:hover .ima-container {
+   height: 50%;
+ }
+
+ .item:hover .text-div {
+   height: 50%;
+   opacity: 1;
+ }
+
 
 .search i,
 .search .icnt {
