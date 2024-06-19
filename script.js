@@ -32,30 +32,6 @@ function pad(number) {
 
 
 
-// carusel
-
-// Example of adding auto-scroll functionality
-const carousel = document.querySelector('.carousel');
-
-let scrollAmount = 0;
-const scrollStep = 200;
-const delay = 3000; // 3 seconds
-
-function autoScroll() {
-  if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
-    scrollAmount = 0;
-  } else {
-    scrollAmount += scrollStep;
-  }
-  carousel.scrollTo({
-    top: 0,
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-}
-
-setInterval(autoScroll, delay);
-
 
 // reveal
 
@@ -78,7 +54,7 @@ $(document).ready(function() {
 });
 
 
-
+// menubar
 
 $(document).ready(function() {
     $('.menu-toggle, .menu-toggle1').click(function() {
