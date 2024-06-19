@@ -384,6 +384,7 @@ nav li a{
   display: flex;
   transition: transform 0.5s ease-in-out;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .header-c {
@@ -477,6 +478,8 @@ nav li a{
 
 .food-pic img {
   overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .food-info {
   position: relative;
@@ -495,7 +498,7 @@ nav li a{
 .food-info h6 {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--text-color2);
+  color: var(--text-color);
   width: 80%;
 }
 
@@ -521,8 +524,15 @@ nav li a{
   border-radius: 0.3rem;
 }
 
+.price button:hover {
+  background-color: var(--text-color);
+  color: var(--text-color3);
+  border: 2px solid var(--text-color);
+}
+
 .price h3 {
   color: var(--text-color2);
+  font-weight: 600;
 }
 
   
