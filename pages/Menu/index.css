@@ -370,146 +370,162 @@ nav li a{
     color: var(--text-color2);
   }
 
-  /* second section */
-.sell-market{
+  /* second part */
+
+.sell-market {
   background-color: var(--primary-color2);
-  padding: 3rem 0;
-  overflow-x: hidden;
-}
-.global-market{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    padding: 2rem 0;
   position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
+.global-market {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.header-c {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-c .my-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.market {
+  flex: 1;
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 
-  .header-c{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-c .my-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-  }
-  .my-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .my-list li {
-    padding: 0.6rem 1rem; 
-    position: relative;   
-    cursor: pointer;
-    color: var(--text-color2);
-  }
-  .my-list li a{
-    font-size: 1rem;
-  }
-  .my-list li.active{
-    color: var(--text-color);
-    font-weight: 600;
-  }
-  .my-list li::after {
-    content: '';
-    display: block;
-    width: 3px;
-    height: 100%;
-    background-color:var(--secondary-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .my-list li:first-child::after{
-    content: none;
-  }
-  .my-list li:hover{
-    color: var(--text-color);
-  }
-  #market1, #market2, #market3, #market5 {
-    flex: 1 1 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin: 0 auto;
-    align-items: center;
-    min-width: 100%;
-    height: auto;
-    padding: 2rem;
-    position: relative;
-    justify-items: center;
-    row-gap: 3rem;
-  }
-  .market {
-    display: none;
+ .my-list {
+  display: flex;
+  list-style: none;
+   padding: 0;
+   margin: 0 auto;
+ }
+
+ .my-list li {
+   padding: 0.6rem 1rem;
+   position: relative;
+   cursor: pointer;
+   color: var(--text-color2);
+ }
+
+ .my-list li a {
+   font-size: 1rem;
+ }
+
+ .my-list li.active {
+   color: var(--text-color);
+   font-weight: 600;
+ }
+
+ .my-list li::after {
+   content: '';
+   display: block;
+   width: 3px;
+   height: 100%;
+   background-color: var(--secondary-color);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+ }
+.my-list li:first-child::after {
+  content: none;
 }
 
-.market.active {
-    display: block;
+.my-list li:hover {
+  color: var(--text-color);
+}
+#market1,
+#market2,
+#market3,
+#market4,
+#market5 {
+  flex: 1 1 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  align-items: center;
+  min-width: 100%;
+  height: auto;
+  position: relative;
+  justify-items: center;
+  row-gap: 3rem;
+}
+.food {
+  width: 19rem;
+  height: 26rem;
 }
 
+.food-pic {
+  height: 50%;
+  position: relative;
+}
 
-  .food{
-    width: 19rem;
-    height:26rem;
-  }
-  .food-pic{
-    height: 50%;
-    position: relative;
-  }
-  .food-pic img{
-    overflow: hidden;
-  }
+.food-pic img {
+  overflow: hidden;
+}
+.food-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background-color: var(--secondary-color);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 
-  .food-info{
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    gap: 1rem;
-    padding: 2rem 1.5rem;
-    background-color: var(--secondary-color);
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-  .food-info h6{
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--text-color2);
-    width: 80%;
-  }
-  .food-info p{
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: var(--text-color2);
-  }
-  .price{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3rem;
-  }
-  .price button{
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    color: var(--text-color2);
-    font-size: 1rem;
-    border: 2px solid var(--Primary-color);
-    border-radius: 0.3rem;
-  }
-  .price h3{
-    color: var(--text-color2);
-  }
+.food-info h6 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-color2);
+  width: 80%;
+}
 
+.food-info p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-color2);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.price button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--text-color2);
+  font-size: 1rem;
+  border: 2px solid var(--Primary-color);
+  border-radius: 0.3rem;
+}
+
+.price h3 {
+  color: var(--text-color2);
+}
+
+  
 
 
  
