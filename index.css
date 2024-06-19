@@ -142,7 +142,7 @@ nav li a {
   text-align: center;
   top: 1rem;
   p {
-    max-width: 90%;
+    width: 80%;
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
@@ -276,9 +276,9 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin: 0 auto;
-  max-width:50%;
+  width:50%;
 }
 .of-text h1 {
   font-size: 1rem;
@@ -941,7 +941,16 @@ footer h3 {
 @media (min-width: 475px) {
   /* first section */
 
-body {
+html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
     height: auto;
     background-color: var(--Primary-color);
     margin: 0 auto;
@@ -1071,7 +1080,7 @@ body {
     top: 1rem;
 
     p {
-      max-width: 90%;
+      width: 60%;
       text-align: center;
       font-size: 0.7rem;
       font-weight: 500;
@@ -1081,12 +1090,12 @@ body {
 
   .main-face {
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 35%;
     text-align: center;
     line-height: 0.8;
-    top: 20%;
+    top: 26%;
     color: var(--primary-color2);
   }
 
@@ -1096,28 +1105,28 @@ body {
   }
 
   #cau-img1 {
-    width: 155px;
-    height: 151px;
+    width: 200px;
+    height: 199px;
   }
 
   #cau-img2 {
-    width: 152px;
-    height: 151px;
+    width: 200px;
+    height: 195px;
   }
 
   #cau-img3 {
-    width: 155px;
-    height: 151px;
+    width: 200px;
+    height: 198px;
   }
 
   #cau-img4 {
-    width: 155px;
-    height: 151px;
+    width: 200px;
+    height: 197px;
   }
 
   #cau-img5 {
-    width: 155px;
-    height: 151px;
+    width: 200px;
+    height: 200px;
   }
 
   /* first second */
@@ -1222,9 +1231,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 0.2rem; */
+    gap: 1rem;
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
   }
 
   .of-text h1 {
@@ -1273,16 +1282,24 @@ body {
   }
 
   .carousel {
+    width: 100vw;
     display: flex;
     gap: 0.7rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    margin: 0 auto;
+    padding: 0 0.7rem;
+    gap: 1rem;
   }
 
   .item {
     position: relative;
-    width: 170px;
+    min-width: 13.5rem;
+    flex: 0 0 auto;
     height: 45vh;
-    overflow: hidden;
     transition: height 0.3s ease;
+    scroll-snap-align: center;
   }
 
   .ima-container {
@@ -1924,6 +1941,81 @@ body {
 @media (min-width: 768px) {
   /* .container {
       max-width: 768px;} */
+
+  .header{
+    display: flex;
+    padding: 1.7rem 2rem;
+  }
+
+  .main-logo{
+    position: relative;
+  }
+
+  .nav-icn{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .first-sec p{
+    width: 60%;
+    font-size: 0.8rem;
+  }
+
+  .of-text{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+  }
+  .d{
+    font-size: 1.5rem;
+  }
+  .carousel{
+    display: flex;
+    gap: 1.5rem;
+    scrollbar-color:var(--text-color) ;
+  }
+  .full-cont{
+    transform: translateX(2rem);
+    position: relative;
+    top: 10rem;
+    width: 70%;
+
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+
+  .foot-cont{
+    display: flex;
+    flex-direction: row;
+
+
+    h3{
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+  }
+
+  .news{
+    max-width: 40%;
+  }
+
+  .impo-links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 60%;
+  }
+
+  .copyright{
+    position: relative;
+    top: -2rem;
+  }
+
+
+
 }
 /* laptop */
 @media (min-width: 1024px) {
@@ -2004,7 +2096,7 @@ body {
     top: 1rem;
 
     p {
-      max-width: 40%;
+      width: 60%;
       text-align: center;
       font-size: 1rem;
       font-weight: 400;
