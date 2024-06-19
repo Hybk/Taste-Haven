@@ -3200,11 +3200,14 @@ html,
     width: 90%;
     display: flex;
     gap: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .item {
     position: relative;
-    width: 100%;
+    max-width: 20%;
     height: 55vh;
     overflow: hidden;
     transition: height 0.3s ease;
