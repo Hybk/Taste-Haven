@@ -2307,14 +2307,16 @@ html,
   }
 
   .carousel {
-    width: 90%;
+    width: 100%;
     display: flex;
     gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   .item {
     position: relative;
-    width: 100%;
+    width: 10%;
     height: 55vh;
     overflow: hidden;
     transition: height 0.3s ease;
@@ -3203,6 +3205,7 @@ html,
     overflow: hidden;
     margin: 0 auto;
     padding: 0;
+    align-items: center;
   }
 
   .item {
