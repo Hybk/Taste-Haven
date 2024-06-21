@@ -5,15 +5,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
-            // Remove active class from all tabs
+
             tabs.forEach(tab => tab.classList.remove('active'));
-            // Add active class to clicked tab
+
             tab.classList.add('active');
             
-            // Calculate the new position
             const offset = index * -100;
             marketContainer.style.transform = `translateX(${offset}%)`;
         });
     });
 });
 
+// menubar
+
+$(document).ready(function() {
+    $('.menu-toggle, .menu-toggle1').click(function() {
+        const navList = $('nav .nav-list');
+        const menuToggle = $('.menu-toggle');
+        const menuToggle1 = $('.menu-toggle1');
+
+        navList.toggleClass('active');
+
+        if (navList.hasClass('active')) {
+            menuToggle.hide();
+            menuToggle1.show();
+        } else {
+            menuToggle.show();
+            menuToggle1.hide();
+        }
+    });
+
+    $('.nav-list li a').click(function() {
+        const navList = $(this).closest('nav').find('.nav-list');
+        const menuToggle = $('.menu-toggle');
+        const menuToggle1 = $('.menu-toggle1');
+
+        navList.removeClass('active');
+
+        menuToggle.show();
+        menuToggle1.hide();
+    });
+});
