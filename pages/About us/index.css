@@ -130,7 +130,7 @@ nav li a {
 /* first sec */
 .sec-ff {
   width: 100vw;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .wholly {
@@ -139,7 +139,7 @@ nav li a {
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -384,7 +384,7 @@ nav li a {
  }
 
  .second-side {
-position: absolute;
+position: relative;
    width: 50%;
    /* transform: translateX(11rem);
    top: 97.09rem; */
