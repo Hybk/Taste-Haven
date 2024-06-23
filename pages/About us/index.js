@@ -17,7 +17,7 @@
     // menubar
 
 
-    $(document).ready(function() {
+$(document).ready(function() {
     $('.menu-toggle, .menu-toggle1').click(function() {
         const navList = $('nav .nav-list');
         const menuToggle = $('.menu-toggle');
