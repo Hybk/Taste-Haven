@@ -2,19 +2,46 @@
 document.addEventListener("DOMContentLoaded", function() {
     const tabs = document.querySelectorAll('.my-list li');
     const marketContainer = document.querySelector('.global-market');
+    const markets = document.querySelectorAll('.market');
 
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
-
             tabs.forEach(tab => tab.classList.remove('active'));
-
             tab.classList.add('active');
             
-            const offset = index * -100;
-            marketContainer.style.transform = `translateX(${offset}%)`;
+            // Hide all markets
+            markets.forEach(market => market.style.display = 'none');
+
+            // Show the corresponding market
+            switch (index) {
+                case 0:
+                    document.querySelector('#market1').style.display = 'grid';
+                    break;
+                case 1:
+                    document.querySelector('#market2').style.display = 'grid';
+                    break;
+                case 2:
+                    document.querySelector('#market3').style.display = 'grid';
+                    break;
+                case 3:
+                    document.querySelector('#market4').style.display = 'grid';
+                    break;
+                case 4:
+                    document.querySelector('#market5').style.display = 'grid';
+                    break;
+            }
         });
     });
 });
+
+
+
+
+
+
+
+
+
 
 // menubar
 

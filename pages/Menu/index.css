@@ -305,6 +305,9 @@ nav li a {
     transition: transform 0.5s ease-in-out;
     margin: 0 auto;
     padding: 1rem 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+      width: 100%;
  }
  #market1,
  #market2,
@@ -318,7 +321,18 @@ nav li a {
     margin: 0 auto;
     justify-content: center;
     flex: 1 1 100%;
+ }
 
+ #market1:nth-child(n+6){
+  display: none;
+ }
+
+ /* #market1, */
+ #market2,
+ #market3,
+ #market4,
+ #market5{
+   display: none;
  }
  .market {
    flex-grow: 1;
@@ -334,6 +348,7 @@ nav li a {
  .food-pic {
    height: 40%;
    position: relative;
+      scroll-snap-align: center;
  }
 
  .food-pic img {
