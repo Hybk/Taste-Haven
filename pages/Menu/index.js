@@ -46,3 +46,31 @@ $(document).ready(function() {
         menuToggle1.hide();
     });
 });
+
+
+//arrow
+$(document).ready(function () {
+    const $list = $('.my-list');
+    const $listItems = $('.my-list li');
+    const $rightArrow = $('#right-arrow');
+    const $leftArrow = $('#left-arrow');
+
+    let currentIndex = 0;
+
+    $leftArrow.on('click', function () {
+        if (currentIndex < $listItems.length - 1) {
+            currentIndex++;
+            $listItems.eq(currentIndex)[0].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+    });
+
+    $rightArrow.on('click', function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            $listItems.eq(currentIndex)[0].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+    });
+});
+
+
+

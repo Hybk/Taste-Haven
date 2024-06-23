@@ -250,6 +250,342 @@ nav li a {
  }
 
 
+/* third section */
+
+.sell-market{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color2);
+}
+
+ .header-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+ }
+
+ .my-list{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 200px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+ }
+ .my-list::-webkit-scrollbar {
+   display: none;
+ }
+ .my-list li{
+    list-style: none;
+    flex: 0 0 200px;
+    padding: 1rem;
+    scroll-snap-align: center;
+    text-align: center;
+    width: 100%;
+ }
+ .arr-fr,
+ .arr-bk {
+   cursor: pointer;
+   background-color: var(--secondary-color);
+   padding: 1rem 0.5rem;
+ }
+ .arr-fr svg,
+ .arr-bk svg {
+  color: var(--text-color2);
+ }
+
+ .global-market{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+ }
+ #market1,
+ #market2,
+ #market3,
+ #market4,
+ #market5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    margin: 0 auto;
+    justify-content: center;
+    flex: 1 1 100%;
+
+ }
+ .market {
+   flex-grow: 1;
+   box-sizing: border-box;
+ }
+ .food {
+   width: 10rem;
+   height: 15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .food-pic {
+   height: 40%;
+   position: relative;
+ }
+
+ .food-pic img {
+   overflow: hidden;
+   border-top-left-radius: 0.5rem;
+   border-top-right-radius: 0.5rem;
+ }
+
+ .food-info {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 60%;
+   gap: 0.7rem;
+   padding: 0.5rem 0.5rem;
+   background-color: var(--secondary-color);
+   border-bottom-left-radius: 0.5rem;
+   border-bottom-right-radius: 0.5rem;
+ }
+ .food-info h6 {
+   font-size: 0.8rem;
+   font-weight: 800;
+   color: var(--text-color);
+   width: 80%;
+ }
+
+ .food-info p {
+   font-size: 0.6rem;
+   font-weight: 300;
+   color: var(--text-color2);
+ }
+
+  .my-list li.active {
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+ .price {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 0.5rem;
+   margin: 0 auto;
+ }
+
+ .price button {
+   padding: 0.5rem 1rem;
+   background-color: transparent;
+   color: var(--text-color2);
+   font-size: 0.6rem;
+   border: 2px solid var(--Primary-color);
+   border-radius: 0.3rem;
+ }
+ .price h3 {
+   color: var(--text-color2);
+   font-weight: 600;
+   font-size: 0.9rem;
+ }
+
+ .nxr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+ }
+
+ .nxr button{
+   padding: 0.5rem 1rem;
+   background-color: transparent;
+   color: var(--text-color2);
+   font-size: 0.7rem;
+   border: 2px solid var(--Primary-color);
+   border-radius: 0.3rem;
+ }
+.nxr p::first-letter{
+  color: var(--text-color2);
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+ /* footer */
+ footer {
+   background-color: var(--secondary-color);
+   flex-wrap: wrap;
+   color: var(--text-color2);
+ }
+
+ .foot-cont {
+   padding: 4rem 3.5rem;
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   font-size: 1rem;
+   font-weight: 300;
+   justify-content: space-around;
+   gap: 2rem;
+ }
+
+ footer ul {
+   list-style: none;
+ }
+
+ footer h3 {
+   font-size: 1rem;
+   font-weight: 800;
+ }
+
+ .news {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+
+ .news h3:first-child {
+   letter-spacing: 0.1rem;
+ }
+
+ .inner-news {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+ }
+
+ .mail input {
+   padding: 0.7rem 1rem;
+   width: 25rem;
+   border-radius: 1.5rem;
+   background-color: var(--secondary-color);
+   border: 1px solid var(--text-color2);
+   color: var(--text-color2);
+   font-size: 1rem;
+ }
+
+ .mail input::placeholder {
+   color: var(--text-color2);
+ }
+
+ .mail input:valid {
+   color: var(--text-color2);
+ }
+
+ .mail {
+   display: flex;
+   align-items: center;
+ }
+
+ .mail-icn {
+   max-width: 3rem;
+   max-height: 3rem;
+   background-color: var(--text-color2);
+   color: var(--secondary-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   position: relative;
+   transform: translateX(-2.5rem);
+   cursor: pointer;
+ }
+
+ .mail-icn i {
+   font-size: 1rem;
+ }
+
+ .mail-icn i:hover {
+   transform: rotate(-50deg) translateY(2px);
+   transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .all-sol {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   position: relative;
+   transform: translateY(-1rem);
+ }
+
+ .facebook,
+ .instagram,
+ .x {
+   width: 3rem;
+   height: 3rem;
+   background-color: var(--text-color2);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .facebook i,
+ .instagram i,
+ .x i {
+   font-size: 2rem;
+   color: var(--secondary-color);
+   position: relative;
+   transform: translateY(0.3rem);
+ }
+
+ .impo-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   /* gap: 0.5rem; */
+ }
+
+ .impo-links h3 {
+   margin-bottom: 3rem;
+   font-size: 1rem;
+   color: var(--text-color2);
+   position: relative;
+ }
+
+ .impo-links ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 1rem;
+ }
+
+ .impo-links li {
+   margin-bottom: 0.5rem;
+ }
+
+ .impo-links a {
+   text-decoration: none;
+   color: var(--text-color2);
+   transition: color 0.3s;
+   font-size: 0.9rem;
+   font-weight: 100;
+ }
+
+ .impo-links a:hover {
+   color: var(--text-color);
+ }
+
+ .copyright {
+   position: relative;
+   font-size: 0.9rem;
+   font-weight: 200;
+   bottom: 4rem;
+   margin: 0 auto;
+   width: 70%;
+   text-align: center;
+ }
+
 
 
 
