@@ -265,15 +265,26 @@ nav li a {
   margin: 0;
 }
 
+
+.chefs {
+  position: relative;
+  transition: width 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+.chefs img {
+  transition: transform 0.3s ease;
+}
+
+.chefs .dex {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
 .chefs:hover {
-  transform: scale(1.1);
   width: 500px;
   z-index: 1;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-.chefs:hover img {
-  transform: scale(1.2);
 }
 
 .chefs:hover .dex {
@@ -291,17 +302,17 @@ nav li a {
  .contact-us {
    display: flex;
    max-width: 100vw;
-   /* padding: 4.5rem 5rem; */
+   padding: 2.5rem 1rem;
  }
 
  .first-side {
-   width: 50%;
+   width: 80%;
    display: flex;
    flex-direction: column;
-   /* gap: 1rem; */
+   gap: 0.5rem;
    align-items: flex-start;
    justify-content: center;
-   /* transform: translateX(41rem); */
+   transform: translateX(6rem);
 
  }
 
@@ -313,10 +324,13 @@ nav li a {
  .first-side p {
    font-size: 0.7rem;
    font-weight: 300;
+   width: 70%;
 
  }
 
- .first-side input {}
+ .first-side input {
+
+ }
 
  .input-group {
    display: flex;
@@ -333,14 +347,13 @@ nav li a {
  .form-group {
    display: flex;
    align-items: center;
-   /* gap: 1rem; */
+   gap: 1rem;
 
  }
 
  .form-group input {
-   width: 180px;
-   /* padding: 0.7rem 0;
-   padding: 1rem 0.8rem; */
+   width: 115px;
+   padding: 0.3rem 0;
    border-radius: 0.3rem;
    border: 1px solid #E0E0E0;
  }
@@ -348,7 +361,7 @@ nav li a {
  .contact-form {
    display: flex;
    flex-direction: column;
-   /* gap: 1rem; */
+   gap: 0.5rem;
  }
 
  .bn {
@@ -363,12 +376,12 @@ nav li a {
  .email-group input {
    width: 100%;
    border-radius: 0.3rem;
-   padding: 0.7rem 1rem;
+   padding: 0.5rem 1rem;
    border: 1px solid #E0E0E0;
  }
 
  .email-group label {
-   font-size: 1rem;
+   font-size: 0.8rem;
    font-weight: 500;
  }
 
@@ -384,11 +397,14 @@ nav li a {
  }
 
  .second-side {
-position: relative;
+    position: absolute;
    width: 50%;
-   /* transform: translateX(11rem);
-   top: 97.09rem; */
+   transform: translateX(-9rem);
+   width: 35rem;
+   top: 74.9rem;
+
  }
+
  footer {
    background-color: var(--secondary-color);
    flex-wrap: wrap;
