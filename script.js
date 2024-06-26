@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 // Timer section
 let hours = 0;
 let minutes = 0;
@@ -30,9 +23,6 @@ function pad(number) {
     return (number < 10 ? "0" : "") + number;
 }
 
-
-
-
 // reveal
 
 $(document).ready(function() {
@@ -52,7 +42,6 @@ $(document).ready(function() {
         }
     });
 });
-
 
 // menubar
 

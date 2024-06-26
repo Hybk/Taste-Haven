@@ -904,7 +904,7 @@ nav li a {
 
 
   .my-list {
-        width: 100% !important;
+    width: 100% !important;
     display: flex;
     list-style: none;
     padding: 0;
