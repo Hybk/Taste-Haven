@@ -1020,7 +1020,7 @@ nav li a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .price button {
