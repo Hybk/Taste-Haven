@@ -154,7 +154,9 @@ nav li a {
   position: absolute;
   right: 0;
   bottom: 0;
-  /* z-index: -1; */
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .grad {
@@ -792,7 +794,7 @@ nav li a {
     /* z-index: -1; */
   }
 
-  /* .grad {
+  .grad {
     position: absolute;
     top: 0;
     left: 0;
@@ -801,7 +803,7 @@ nav li a {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0.9;
     pointer-events: none;
-  } */
+  }
 
   .inner-ff {
     position: relative;
@@ -834,41 +836,58 @@ nav li a {
     color: var(--text-color2);
   }
 
+  .inner-ff h1 {
+    font-size: 2.5rem;
+    /* Increased font size */
+  }
+
+  .inner-ff p {
+    font-size: 1.25rem;
+    /* Increased font size */
+    font-weight: 300;
+  }
+
   .inner-ff-input {
     display: flex;
     gap: 1rem;
     align-items: center;
   }
 
-  .inner-ff-input input {
-    width: 450px;
-    padding: 0.9rem 1rem;
-    background-color: transparent;
-    border-radius: 2rem;
-    border: 2px solid var(--text-color2);
-  }
+.inner-ff-input input {
+  width: 60rem;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  border: 1px solid var(--text-color2);
+  font-size: 1rem;
+}
 
-  .ic {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--text-color);
-    color: var(--text-color2);
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    border-radius: 2rem;
-    text-align: center;
-    transform: translateX(-4rem);
-  }
+.inner-ff-input input::placeholder {
+  font-size: 1rem;
+}
 
-  .ic i {
-    margin: 0 auto;
-  }
+.ic {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--text-color);
+  color: var(--text-color2);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  text-align: center;
+  transform: translateX(-3rem);
+}
 
-  .inner-ff-input ::placeholder {
-    color: var(--text-color2);
-    font-size: 1rem;
-  }
+.ic i {
+  margin: 0 auto;
+}
+
+.inner-ff-input ::placeholder {
+  color: var(--text-color2);
+  font-size: 1rem;
+  /* Increased font size */
+}
 
   .inner-ff-input input:focus {
     color: var(--text-color2);
