@@ -142,7 +142,6 @@ nav li a {
 /* first section */
 .img-section {
   max-width: 100%;
-  background-image: url(/Taste-Haven/assets/tea.jpg);
   position: relative;
   height: 20rem;
   background-size: cover;
@@ -151,6 +150,13 @@ nav li a {
   position: relative;
   margin: 0 auto;
 }
+.background{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* z-index: -1; */
+}
+
 .grad {
   position: absolute;
   top: 0;
@@ -770,7 +776,6 @@ nav li a {
   /* first section */
   .img-section {
     max-width: 100%;
-    background-image: url(/Taste-Haven/assets/tea.jpg);
     position: relative;
     height: 31rem;
     background-size: cover;
@@ -780,7 +785,14 @@ nav li a {
     margin: 0 auto;
   }
 
-  .grad {
+  .background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  /* .grad {
     position: absolute;
     top: 0;
     left: 0;
@@ -789,7 +801,7 @@ nav li a {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0.9;
     pointer-events: none;
-  }
+  } */
 
   .inner-ff {
     position: relative;
