@@ -663,7 +663,31 @@ nav li a {
 
 
 
+/* Hide the hamburger menu and nav list on larger screens */
+@media (min-width: 1024px) {
 
+  .menu-toggle,
+  .menu-toggle1 {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+}
+
+/* Show the hamburger menu and hide the nav list on smaller screens */
+@media (max-width: 1024px) {
+
+  .menu-toggle,
+  .menu-toggle1 {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+}
 
 
 
